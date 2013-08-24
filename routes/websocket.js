@@ -34,7 +34,7 @@ module.exports = function(app, io) {
 
       url.push('http://127.0.0.1:' + app.get('port'));
       url.push('/data/', socket.id);
-      url.push('/', fileName);
+      url.push('/', encodeURIComponent(fileName));
 
       args.push(url.join(''));
 

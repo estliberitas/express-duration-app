@@ -101,7 +101,7 @@ module.exports = function(app, io) {
   app.get('/data/:id/:file', function requestIndex(req, res) {
     var rawRange = req.get('range') || 'bytes=0-'
       , socket = io.clients[req.params.id]
-      , filename = req.params.file
+      , filename = decodeURIComponent(req.params.file)
       , size = socket.files[filename]
       , range = rangeParse(size, rawRange)[0];
 
