@@ -1,0 +1,15 @@
+doctype html5
+html
+  head
+    title express-duration-app
+    meta(charset='utf-8')
+    link(href='stylesheets/style.css', rel='stylesheet', type='text/css')
+    script(type='application/javascript', src='/socket.io/socket.io.js')
+    script(type='application/javascript', src='http://crypto-js.googlecode.com/svn/tags/3.1.2/build/rollups/md5.js')
+    script(type='application/javascript', src='//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js')
+    script(type='application/javascript', src='javascripts/duration.js')
+  body(onload='app()')
+    #duration.duration
+      input(type='file', multiple='multiple', accept='video/*')
+      button.browse Browse
+      span.status

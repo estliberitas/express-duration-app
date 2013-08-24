@@ -1,0 +1,47 @@
+* {
+  margin: 0;
+  padding: 0;
+  color: #777777;
+}
+
+body {
+  font-family: arial, helvetica, sans-serif;
+  font-size: 13px;
+  padding: 50px;
+}
+
+.duration {
+  width: 248px;
+  border: solid 1px #dddddd;
+  border-radius: 3px;
+}
+
+.duration > * {
+  text-align: center;
+  width: 100%;
+}
+
+.duration > input {
+  display: block;
+  height: 0;
+  width: 0;
+}
+
+.duration > button {
+  border: none;
+  background-color: inherit;
+  font-size: 24px;
+}
+
+.duration > button:hover {
+  cursor: pointer;
+  background-color: #eee;
+}
+
+.duration > span {
+  display: none;
+}
+
+.duration > span > * {
+  vertical-align: middle;
+}

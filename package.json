@@ -1,0 +1,26 @@
+{
+  "name":         "express-duration-app",
+  "description":  "Node.js web application, allowing to calculate total duration for video files w/o uploading them.",
+  "author":       {
+    "name":  "Alexander Makarenko",
+    "email": "estliberitas@gmail.com"
+  },
+  "version":      "0.2.0",
+  "license":      "MIT",
+  "private":      true,
+  "repository":   {
+    "type": "git",
+    "url":  "https://github.com/estliberitas/express-duration-app.git"
+  },
+  "dependencies": {
+    "express":      "3.3.5",
+    "jade":         "*",
+    "mime":         "1.2.11",
+    "node-ffprobe": "1.2.2",
+    "range-parser": "0.0.4",
+    "socket.io":    "0.9.16"
+  },
+  "scripts":      {
+    "start": "node app.js"
+  }
+}
