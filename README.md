@@ -1,4 +1,4 @@
-Total video duration calculator application
+Video duration calculator application
 ===
 
 This Express application allows you to calculate total duration for given video
