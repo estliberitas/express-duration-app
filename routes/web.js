@@ -39,7 +39,7 @@ util.inherits(SocketFileReader, Readable);
  *
  * @type {number}
  */
-SocketFileReader.prototype.BUFFER_SIZE = 64*1024;
+SocketFileReader.prototype.BUFFER_SIZE = 256*1024;
 
 
 
